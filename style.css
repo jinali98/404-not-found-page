@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: space monospace;
+    overflow: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1440px;
+    display: flex;
+}
+
+.container-nameTag {
+    width: 20%;
+    height: 100px;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 2rem;
+}
+
+.nameTag-content {
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.main-content {
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.main-content-img {
+    width: 40%;
+}
+
+.main-content-body {
+    width: 35%;
+}
+
+.main-content-heading {
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    color: #333333;
+}
+
+.main-content-desc {
+    width: 60%;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 35.54px;
+    word-spacing: 1px;
+}
+
+.main-content-button {
+    width: 200px;
+    height: 55px;
+    margin-top: 2rem;
+    background-color: #333333;
+    color: aliceblue;
+    font-size: 16px;
+
+}
+
+footer {
+    margin: 1.5rem auto;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+/* for mobile  */
+@media (max-width:600px) {
+    body {
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-nameTag {
+        align-items: flex-start;
+    }
+
+    .main-content {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .main-content-img {
+        width: 80%;
+        margin: auto;
+    }
+
+    .main-content-body {
+        width: 80%;
+        align-items: center;
+    }
+    .main-content-heading{
+        font-size: 48px;
+    }
+.main-content-desc{
+    font-size: 18px;
+    font-weight: 400;
+}
+}
